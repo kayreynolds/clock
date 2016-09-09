@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen Clock</title>
+<style>
+@import 'https://fonts.googleapis.com/css?family=Audiowide';
+
+body {
+	font-family: "Audiowide", sans-serif;
+	font-size: 10em;
+	color: pink;
+	background-color: #1d1d1d;
+}
+
+#clock span {
+	color: #444;
+	float: left;
+	text-transform: uppercase;
+}
+
+.digits {
+	width: 850px;
+	float: left;
+}
+
+.wrapper {
+	width: 1150px;
+	margin: 10% auto;
+	text-shadow: 3px 3px 7px #111;
+}
+</style>
+</head>
+<body id="clock" onload="setInterval('updateTime()','1000')">
+</body>
+    <script src="clock.js"></script>
+</html>
